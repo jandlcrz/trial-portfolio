@@ -1,0 +1,58 @@
+/*========================= DARK THEME VARIABLES =========================*/
+body.dark-theme {
+  --green-color: hsl(74,21%,56%); /* changed */
+  --black-color: hsl(0, 0%, 18%);
+  --gray-color: hsl(0, 0%, 30%);
+  --text-color-dark: hsl(0, 0%, 95%);
+  --text-color-medium: hsl(0, 0%, 70%);
+  --body-color-1: hsl(0,0%,6%);
+  --body-color-2: hsl(20,29%,18%);
+}
+
+/*========== Custom dark mode changes (find proper spot for this) ==========*/
+.dark-theme .shadow-header {
+  box-shadow: 0 1px 12px hsla(0, 0%, 0%, .6);
+}
+
+.dark-theme .section__title::after,
+.dark-theme .section__title::after {
+  background-color: hsla(14, 70%, 50%, .2);
+}
+
+.dark-theme :is(.home__arrow, .home__line, .about__line) {
+  filter: none;
+}
+
+.dark-theme .home__description b {
+  background: linear-gradient(90deg,
+              hsla(14, 80%, 50%, .3),
+              hsla(14, 80%, 50%, 0))
+}
+
+.dark-theme :is(.socials__button, .skills__icon i) {
+  color: var(--white-color);
+}
+
+.dark-theme .projects__card:hover {
+  background-color: var(--body-color-1);
+}
+
+.dark-theme :is(.contact__mail, .contact__input, .contact__label) {
+  background-color: var(--body-color-2);
+}
+
+.dark-theme .footer {
+  background-color: hsl(0, 0%, 4%);
+}
+
+.dark-theme::-webkit-scrollbar {
+  background-color: hsl(0, 0%, 20%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 35%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(0, 0%, 50%);
+}

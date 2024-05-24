@@ -1,0 +1,85 @@
+
+// SCSS VARIABLES
+// Screen Widths
+$mobile: 310px;
+$large-mobile: 400px;
+$small-tablet: 576px;
+$medium-tablet: 768px;
+$large-tablet: 992px;
+$regular-screen: 1150px;
+$large-screen: 1500px;
+// Z-index
+$above-bg-index: 5;
+$header-index: 100;
+$modal-index: 500;
+// Colors
+$orange-color: 25 95% 55%;
+$green-color: 102 67% 23%;
+$black-color: 0 0% 0%;
+$gray-color: 0 0% 40%;
+$white-color: 0 0% 95%;
+$text-color-dark: 40 48% 12%;
+$text-color-medium: 40 24% 24%;
+$text-color-light: 0 0% 64%;
+$body-color-1: 32 35% 94%;
+$body-color-2: 30 34% 89%;
+$button-color-1: 33 26% 68%;
+$button-color-2: 35 35 55%;
+// Font Weights
+$regular-weight: 400;
+$medium0weight: 500;
+$semi-bold-weight: 600;
+$bold-weight: 700;
+// Font Styles
+$primary-font: "Cormorant Garamond", sans-serif;
+$secondary-font: "Montserrat", sans-serif;
+
+
+// FUNCTIONS
+@function set-color ($color, $opacity: 1) {
+  @return hsl + "(" + $color / $opacity + ")"
+};
+
+
+// MIXINS
+// Responsive Utilities
+@mixin responsive ($media) {
+  @media screen and (min-width: $media) {
+    @content;
+  }
+};
+// Property Utilities
+@mixin grid-display ($rowgap: 0, $colgap: null) {
+  display: grid;
+  @if ($rowgap == 0) {
+    // use no gap property
+  } @else if ($colgap == null) and ($colgap == null) {
+    gap: $rowgap; // equal gaps
+  } @else {
+    row-gap: $rowgap;
+    column-gap: $colgap;
+  }
+};
+@mixin flex-display ($direction: row, $justify: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+  @if ($direction != row) {
+    flex-direction: $direction;
+  }
+};
+@mixin half-sec-transition($properties...) {
+  $transition-properties: ();
+  @each $property in $properties {
+    $transition-properties: append($transition-properties, $property 0.5s ease, comma);
+  }
+  transition: $transition-properties;
+}
+// Layout Utilities
+@mixin horizontal-line ($width, $height, $color) {
+  content: "";
+  width: $width;
+  height: $height;
+  background-color: set-color($color);
+  position: absolute;
+}

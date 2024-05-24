@@ -1,0 +1,30 @@
+
+/*=========== RESPONSIVE CSS FONT SIZE ===========*/
+:root {
+  --h1-name-font-size: 2rem;
+  --h2-section-title-font-size: 2rem;
+  --h3-title-font-size: 1.25rem;
+  --h3-navlink-font-size: 1.125rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+}
+@include responsive($regular-screen) {
+  :root {
+    --h1-name-font-size: 3rem;
+    --h2-section-title-font-size: 4.5rem;
+    --h3-title-font-size: 1.5rem;
+    --h3-navlink-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+  }
+}
+
+/*=========== RESPONSIVE HEADER SIZE ===========*/
+:root {
+  --header-height: 3.5rem;
+}
+@include responsive($regular-screen) {
+  :root {
+    --header-height: 5.5rem;
+  }
+}
