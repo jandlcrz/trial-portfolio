@@ -5,13 +5,17 @@ body.dark-theme {
   --gray-color: hsl(0, 0%, 30%);
   --text-color-dark: hsl(0, 0%, 95%);
   --text-color-medium: hsl(0, 0%, 70%);
-  --body-color-1: hsl(0,0%,6%);
+  --body-color-1: hsl(35,18%,34%);
   --body-color-2: hsl(20,29%,18%);
 }
 
 /*========== Custom dark mode changes (find proper spot for this) ==========*/
 .dark-theme .shadow-header {
   box-shadow: 0 1px 12px hsla(0, 0%, 0%, .6);
+}
+
+.dark-theme .nav__toggle {
+  color: var(--white-color);
 }
 
 .dark-theme .section__title::after,
@@ -29,8 +33,15 @@ body.dark-theme {
               hsla(14, 80%, 50%, 0))
 }
 
-.dark-theme :is(.socials__button, .skills__icon i) {
+.dark-theme .home__accent {
+  background-image: linear-gradient(90deg,
+  hsla(74, 21%, 56%, 0.5),
+  hsla(74, 21%, 56%,  1));
+}
+
+.dark-theme :is(.socials__button, .contact__social-link, .skills__icon i) {
   color: var(--white-color);
+  border-color: var(--white-color);
 }
 
 .dark-theme .projects__card:hover {
