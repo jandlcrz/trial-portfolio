@@ -218,6 +218,10 @@
     font-size: 0.835rem;
   }
 
+  .home__accent {
+    font-size: 5.75rem;
+  }
+
   .home__flowers-grid {
     display: flex;
     bottom: 0;
@@ -363,7 +367,7 @@
 
   .skills__content {
     padding: 6.5rem 1.5rem 3.5rem;
-    border: 6px solid var(--black-color);
+    border: 3px solid var(--white-color);
   }
 
   .skills__icon i{
@@ -443,7 +447,7 @@
   }
 
   .contact__data .section__title {
-    margin: 0 0 2rem;
+    margin: 0 -3rem 2rem;
     transform: translateX(-6.5rem);
   }
 
@@ -490,4 +494,18 @@
     right: 3rem;
   }
 
+}
+
+@media screen and (min-width: 1500px) {
+  .container {
+    max-width: 1300px;
+  }
+
+  .home__svg-text {
+    font-size: 0.7rem;
+  }
+
+  .contact__data .section__title {
+    margin-left: -6rem;
+  }
 }
