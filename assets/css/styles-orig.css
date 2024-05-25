@@ -848,8 +848,8 @@ img {
 }
 
 .projects__preview iframe {
-  max-width: 100%;
   border: 2px solid var(--black-color);
+  max-width: 100%;
 }
 
 .projects__button {
