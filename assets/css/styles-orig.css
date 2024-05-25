@@ -1096,8 +1096,8 @@ img {
 }
 
 .contact__social-link {
-  border: 3px solid var(--black-color);
-  color: var(--black-color);
+  border: 3px solid var(--white-color);
+  color: var(--white-color);
   padding: 6px;
   font-size: 1.25rem;
   display: grid;
