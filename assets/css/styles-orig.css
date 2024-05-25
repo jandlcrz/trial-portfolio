@@ -847,9 +847,8 @@ img {
   margin-bottom: .75rem;
 }
 
-.projects__preview iframe {
+.projects__preview img {
   border: 2px solid var(--black-color);
-  max-width: 100%;
 }
 
 .projects__button {
