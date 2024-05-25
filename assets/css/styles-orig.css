@@ -842,9 +842,14 @@ img {
   font-family: var(--text-font-style);
 }
 
-.projects__image {
+.projects__preview {
   position: relative;
   margin-bottom: .75rem;
+}
+
+.projects__preview iframe {
+  max-width: 100%;
+  border: 2px solid var(--black-color);
 }
 
 .projects__button {
@@ -1092,17 +1097,18 @@ img {
 }
 
 .contact__social-link {
-  background-color: var(--gray-color);
+  border: 3px solid var(--black-color);
+  color: var(--black-color);
   padding: 6px;
-  color: var(--white-color);
   font-size: 1.25rem;
   display: grid;
   place-items: center;
-  transition: background-color .4s;
+  transition: color .4s, border .4s;
 }
 
 .contact__social-link:hover {
-  background-color: var(--green-color);
+  color: var(--orange-color);
+  border-color: var(--orange-color);
 }
 
 .contact__message {

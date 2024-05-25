@@ -389,14 +389,14 @@
 
   .projects__container {
     grid-template-columns: repeat(3, 350px);
-    padding-block: 3rem 1rem;
+    padding-block: 0rem 2rem;
   }
 
   .projects__card {
     padding: 1.25rem 1.25rem 2.5rem;
   }
 
-  .projects__image {
+  .projects__preview {
     margin: 1rem;
   }
 
