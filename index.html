@@ -1,417 +1,793 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="icon" href="assets/img/favicon1.png" type="image/png">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
-      <link rel="stylesheet" href="assets/css/styles-orig.css">
-      <link rel="stylesheet" href="assets/css/responsive.css">
-      <link rel="stylesheet" href="assets/css/darkstyles.css">
-      <title>Jan Erwin Dela Cruz - Portfolio</title>
-   </head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/img/favicon1.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="assets/css/styles-orig.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/darkstyles.css" />
+    <title>Jan Erwin Dela Cruz - Portfolio</title>
+  </head>
 
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__name">
+          <span>Jan Erwin Dela Cruz</span>
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <div class="nav__title">Menu</div>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About Me</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link nav__link-button"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        <div class="nav__buttons">
+          <i class="ri-sun-line change-theme-button" id="theme-button"></i>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-3-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-   <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
-         <nav class="nav container">
-            <a href="#" class="nav__name">
-               <span>Jan Erwin Dela Cruz</span>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <h1 class="home__name"><span>Jan Erwin Dela Cruz</span></h1>
+          <div class="home__profile">
+            <div class="home__profile__image">
+              <img
+                src="assets/img/home-profile-no-bg-4.png"
+                alt="image"
+                class="home__img"
+              />
+              <div class="home__border"></div>
+              <div class="home__profile__image-background">
+                <img
+                  src="assets/img/home-profile.jpeg"
+                  alt="image"
+                  class="home__bg-img"
+                />
+              </div>
+            </div>
+            <svg class="home__svg" viewBox="0 0 250 290">
+              <defs>
+                <path
+                  id="MyPath"
+                  d="M 15.14 280.828 15.14 87.828 C 14.841 48.091 63.887 15.459 124.596 15.003 C 185.304 14.546 234.835 46.437 235.134 86.174 M 235.134 86.174 235.134 280.828"
+                />
+              </defs>
+              <text class="home__svg-text">
+                <textPath
+                  xlink:href="#MyPath"
+                  href="#MyPath"
+                  startOffset="50%"
+                  text-anchor="middle"
+                >
+                  • &nbsp; Developer &nbsp; • &nbsp; Cloud Engineer &nbsp; •
+                  &nbsp; Electronics Engineer &nbsp; • &nbsp; Developer &nbsp; •
+                  &nbsp; Cloud Engineer &nbsp; • &nbsp; Electronics Engineer
+                  &nbsp; •
+                </textPath>
+              </text>
+            </svg>
+            <div class="home__accent">
+              <span>DevOps</span>
+              <span>Portfolio</span>
+            </div>
+            <div class="home__flowers-grid">
+              <img
+                src="assets/img/elements/flower.svg"
+                alt=""
+                class="home__flowers-svg"
+              />
+              <img
+                src="assets/img/elements/flower.svg"
+                alt=""
+                class="home__flowers-svg"
+              />
+              <img
+                src="assets/img/elements/flower.svg"
+                alt=""
+                class="home__flowers-svg"
+              />
+            </div>
+            <div class="home__arrows-grid">
+              <img
+                src="assets/img/elements/arrow-green.svg"
+                alt=""
+                class="home__arrows-svg"
+              />
+              <img
+                src="assets/img/elements/arrow-green.svg"
+                alt=""
+                class="home__arrows-svg"
+              />
+              <img
+                src="assets/img/elements/arrow-green.svg"
+                alt=""
+                class="home__arrows-svg"
+              />
+            </div>
+          </div>
+          <div class="home__info">
+            <p class="home__description">
+              Aspiring <b>Cloud DevOps Engineer</b> with a passion for building
+              scalable, resilient, and efficient cloud infrastructure through
+              cutting-edge technologies and automation.
+            </p>
+            <a href="#about" class="home__scroll flex__centered">
+              <i class="ri-arrow-down-s-line"></i>&nbsp;<span>SCROLL DOWN</span>
             </a>
-            <div class="nav__menu" id="nav-menu">
-               <div class="nav__title">Menu</div>
-               <ul class="nav__list">
-                  <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                  <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                  <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                  <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                  <li class="nav__item"><a href="#contact" class="nav__link nav__link-button">Contact Me</a></li>
-               </ul>
-               <div class="nav__close" id="nav-close"><i class="ri-close-line"></i></div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <span class="title__accent">
+          About Me
+          <img
+            src="assets/img/elements/flower.svg"
+            alt=""
+            class="title__accent-svg"
+          />
+        </span>
+        <div class="about__container container grid">
+          <h2 class="section__title section__title-left">
+            <span>About Me.</span>
+          </h2>
+          <!-- inside grid for laptop layout-->
+          <div class="about__profile">
+            <div class="about__image">
+              <img
+                src="assets/img/about-profile-no-bg.png"
+                alt="image"
+                class="about__img"
+              />
+              <div class="about__border"></div>
+              <div class="about__image-background">
+                <img
+                  src="assets/img/about-profile.jpeg"
+                  alt="image"
+                  class="about__bg-img"
+                />
+              </div>
             </div>
-            <div class="nav__buttons">
-               <i class="ri-sun-line change-theme-button" id="theme-button"></i>
-               <div class="nav__toggle" id="nav-toggle"><i class="ri-menu-3-line"></i></div>
+            <div class="about__socials">
+              <a
+                href="https://www.linkedin.com/in/janerwindelacruz/"
+                target="_blank"
+                class="socials__button flex__centered"
+                ><i class="ri-linkedin-box-line"></i
+              ></a>
+              <a
+                href="https://github.com/jandlcrz"
+                target="_blank"
+                class="socials__button flex__centered"
+                ><i class="ri-github-fill"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/jaaandlcrz/"
+                target="_blank"
+                class="socials__button flex__centered"
+                ><i class="ri-facebook-box-line"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/jandlcrz_/"
+                target="_blank"
+                class="socials__button flex__centered"
+                ><i class="ri-instagram-line"></i
+              ></a>
             </div>
-         </nav>
-      </header>
-
-
-      <!--==================== MAIN ====================-->
-      <main class="main">        
-          
-         <!--==================== HOME ====================-->
-         <section class="home section" id="home">
-            <div class="home__container container grid">
-               <h1 class="home__name"><span>Jan Erwin Dela Cruz</span></h1>
-               <div class="home__profile">
-                  <div class="home__profile__image">
-                     <img src="assets/img/home-profile-no-bg-5.png" alt="image" class="home__img">
-                     <div class="home__border"></div>
-                     <div class="home__profile__image-background"><img src="assets/img/home-profile.jpeg" alt="image" class="home__bg-img"></div>
-                  </div>
-                  <svg class="home__svg" viewBox="0 0 250 290">
-                     <defs>
-                        <path id="MyPath"
-                        d="M 15.14 280.828 15.14 87.828 C 14.841 48.091 63.887 15.459 124.596 15.003 C 185.304 14.546 234.835 46.437 235.134 86.174 M 235.134 86.174 235.134 280.828" />
-                      </defs>
-                     <text class="home__svg-text">
-                       <textPath xlink:href="#MyPath" href="#MyPath" startOffset="50%" text-anchor="middle">
-                        • &nbsp; Developer &nbsp; • &nbsp; Cloud Engineer &nbsp; • &nbsp; Electronics Engineer &nbsp; • &nbsp; Developer &nbsp; • &nbsp; Cloud Engineer &nbsp; • &nbsp; Electronics Engineer &nbsp; •
-                       </textPath>
-                     </text>
-                  </svg>
-                  <div class="home__accent">
-                     <span>DevOps</span>
-                     <span>Portfolio</span>
-                  </div>
-                  <div class="home__flowers-grid">
-                     <img src="assets/img/elements/flower.svg" alt="" class="home__flowers-svg">
-                     <img src="assets/img/elements/flower.svg" alt="" class="home__flowers-svg">
-                     <img src="assets/img/elements/flower.svg" alt="" class="home__flowers-svg">
-                  </div>
-                  <div class="home__arrows-grid">
-                     <img src="assets/img/elements/arrow-green.svg" alt="" class="home__arrows-svg">
-                     <img src="assets/img/elements/arrow-green.svg" alt="" class="home__arrows-svg">
-                     <img src="assets/img/elements/arrow-green.svg" alt="" class="home__arrows-svg">
-                  </div>
-               </div>
-               <div class="home__info">
-                  <p class="home__description">Aspiring <b>Cloud DevOps Engineer</b> with a passion for building scalable, resilient, and efficient cloud infrastructure through cutting-edge technologies and automation.</p>
-                  <a href="#about" class="home__scroll flex__centered">
-                     <i class="ri-arrow-down-s-line"></i>&nbsp;<span>SCROLL DOWN</span>
-                  </a>
-               </div>
+          </div>
+          <div class="about__info">
+            <div class="about__resume flex__centered">
+              <a href="" target="_blank" class="resume__button flex__centered"
+                ><i class="ri-article-line"></i> <span>View My Resume</span></a
+              >
             </div>
-         </section>
-         
-         <!--==================== ABOUT ====================-->
-         <section class="about section" id="about">
-            <span class="title__accent">
-               About Me
-               <img src="assets/img/elements/flower.svg" alt="" class="title__accent-svg">
-            </span>
-            <div class="about__container container grid">
-               <h2 class="section__title section__title-left"><span>About Me.</span></h2> <!-- inside grid for laptop layout-->
-               <div class="about__profile">
-                  <div class="about__image">
-                     <img src="assets/img/about-profile-no-bg.png" alt="image" class="about__img">
-                     <div class="about__border"></div>
-                     <div class="about__image-background"><img src="assets/img/about-profile.jpeg" alt="image" class="about__bg-img"></div>
-                  </div>
-                  <div class="about__socials">
-                     <a href="https://www.linkedin.com/in/janerwindelacruz/" target="_blank" class="socials__button flex__centered"><i class="ri-linkedin-box-line"></i></a>
-                     <a href="https://github.com/jandlcrz" target="_blank" class="socials__button flex__centered"><i class="ri-github-fill"></i></a>
-                     <a href="https://www.facebook.com/jaaandlcrz/" target="_blank" class="socials__button flex__centered"><i class="ri-facebook-box-line"></i></a>
-                     <a href="https://www.instagram.com/jandlcrz_/" target="_blank" class="socials__button flex__centered"><i class="ri-instagram-line"></i></a>
-                  </div>
-               </div>
-               <div class="about__info">
-                  <div class="about__resume flex__centered">
-                     <a href="" target="_blank" class="resume__button flex__centered"><i class="ri-article-line"></i> <span>View My Resume</span></a>
-                  </div>
-                  <p class="about__description">
-                     Hey there! I'm <b>Jan Erwin Dela Cruz</b>, I specialize in developing and managing cloud infrastructure with a focus on automation and efficiency. I'm an individual with an everlasting drive towards continuous improvement—something which I strive to uphold within my work.
-                  </p>
-                  <div class="about__contact flex__centered">
-                     <a href="#contact" class="about__contact-button flex__centered"><i class="ri-send-plane-line"></i> Contact Me</a>
-                  </div>
-               </div>
+            <p class="about__description">
+              Hey there! I'm <b>Jan Erwin Dela Cruz</b>, I specialize in
+              developing and managing cloud infrastructure with a focus on
+              automation and efficiency. I'm an individual with an everlasting
+              drive towards continuous improvement—something which I strive to
+              uphold within my work.
+            </p>
+            <div class="about__contact flex__centered">
+              <a href="#contact" class="about__contact-button flex__centered"
+                ><i class="ri-send-plane-line"></i> Contact Me</a
+              >
             </div>
-         </section>
+          </div>
+        </div>
+      </section>
 
-         <!--==================== SKILLS AND TECH ====================-->
-         <section class="skills section" id="skills">
-            <h2 class="section__title section__title-right"><span>Skills.</span></h2>
-            <span class="title__accent">
-              Skills
-               <img src="assets/img/elements/flower.svg" alt="" class="title__accent-svg">
-            </span>
-            <div class="skills__container container grid">
-               <article class="skills__card">
-                  <div class="skills__border"></div>
-                  <div class="skills__content">
-                     <h3 class="skills__title">CLOUD ENGINEERING</h3>
-                     <p class="skills__description">I design, manage, and optimize cloud solutions, employing the most suitable cloud services and automation tools to engineer scalable, resilient, and cost-effective infrastructures.</p>
-                     <div class="skills__logos grid">
-                        <div class="logo__guide">
-                           <img src="assets/img/skill-logos/cloud-grayscale-aws.svg" alt="image" class="skills__logo-plain">
-                           <img src="assets/img/skill-logos/cloud-colored-aws.svg" alt="image" class="skills__logo-color">
-                        </div>
-                        <div class="logo__guide">
-                           <img src="assets/img/skill-logos/cloud-grayscale-bash.svg" alt="image" class="skills__logo-plain">
-                           <img src="assets/img/skill-logos/cloud-colored-bash.svg" alt="image" class="skills__logo-color">
-                        </div>
-                        <div class="logo__guide">
-                           <img src="assets/img/skill-logos/cloud-grayscale-powershell.svg" alt="image" class="skills__logo-plain">
-                           <img src="assets/img/skill-logos/cloud-colored-powershell.svg" alt="image" class="skills__logo-color">
-                        </div>
-                        <div class="logo__guide">
-                           <img src="assets/img/skill-logos/cloud-grayscale-terraform.svg" alt="image" class="skills__logo-plain">
-                           <img src="assets/img/skill-logos/cloud-colored-terraform.svg" alt="image" class="skills__logo-color">
-                        </div>
-                        <div class="logo__guide">
-                           <img src="assets/img/skill-logos/cloud-grayscale-docker.svg" alt="image" class="skills__logo-plain">
-                           <img src="assets/img/skill-logos/cloud-colored-docker.svg" alt="image" class="skills__logo-color">
-                        </div>
-                        <div class="logo__guide">
-                           <img src="assets/img/skill-logos/cloud-grayscale-kubernetes.svg" alt="image" class="skills__logo-plain">
-                           <img src="assets/img/skill-logos/cloud-colored-kubernetes.svg" alt="image" class="skills__logo-color">
-                        </div>
-                     </div>
-                  </div>
-               </article>
-               <article class="skills__card">
-                  <div class="skills__border"></div>
-                  <div class="skills__content">
-                     <h3 class="skills__title">WEB DEVELOPMENT</h3>
-                     <p class="skills__description">
-                        I create engaging and effective web applications that harmoniously blend user-focused design with efficient performance and powerful functionality.
-                     </p>
-                     <div class="skills__logos grid">
-                        <div class="logo__guide">
-                           <img src="assets/img/skill-logos/webdev-grayscale-html.svg" alt="image" class="skills__logo-plain">
-                           <img src="assets/img/skill-logos/webdev-colored-html.svg" alt="image" class="skills__logo-color">
-                        </div>
-                        <div class="logo__guide">
-                           <img src="assets/img/skill-logos/webdev-grayscale-css.svg" alt="image" class="skills__logo-plain">
-                           <img src="assets/img/skill-logos/webdev-colored-css.svg" alt="image" class="skills__logo-color">
-                        </div>
-                        <div class="logo__guide">
-                           <img src="assets/img/skill-logos/webdev-grayscale-javascript.svg" alt="image" class="skills__logo-plain">
-                           <img src="assets/img/skill-logos/webdev-colored-javascript.svg" alt="image" class="skills__logo-color">
-                        </div>
-                        <div class="logo__guide">
-                           <img src="assets/img/skill-logos/webdev-grayscale-typescript.svg" alt="image" class="skills__logo-plain">
-                           <img src="assets/img/skill-logos/webdev-colored-typescript.svg" alt="image" class="skills__logo-color">
-                        </div>
-                        <div class="logo__guide">
-                           <img src="assets/img/skill-logos/webdev-grayscale-tailwind.svg" alt="image" class="skills__logo-plain">
-                           <img src="assets/img/skill-logos/webdev-colored-tailwind.svg" alt="image" class="skills__logo-color">
-                        </div>
-                        <div class="logo__guide">
-                           <img src="assets/img/skill-logos/webdev-grayscale-sass.svg" alt="image" class="skills__logo-plain">
-                           <img src="assets/img/skill-logos/webdev-colored-sass.svg" alt="image" class="skills__logo-color">
-                        </div>
-                        <div class="logo__guide">
-                           <img src="assets/img/skill-logos/webdev-grayscale-react.svg" alt="image" class="skills__logo-plain">
-                           <img src="assets/img/skill-logos/webdev-colored-react.svg" alt="image" class="skills__logo-color">
-                        </div>
-                        <div class="logo__guide">
-                           <img src="assets/img/skill-logos/webdev-grayscale-nodejs.svg" alt="image" class="skills__logo-plain">
-                           <img src="assets/img/skill-logos/webdev-colored-nodejs.svg" alt="image" class="skills__logo-color">
-                        </div>
-                        <div class="logo__guide">
-                           <img src="assets/img/skill-logos/webdev-grayscale-git.svg" alt="image" class="skills__logo-plain">
-                           <img src="assets/img/skill-logos/webdev-colored-git.svg" alt="image" class="skills__logo-color">
-                        </div>
-                        <div class="logo__guide">
-                           <img src="assets/img/skill-logos/webdev-grayscale-github.svg" alt="image" class="skills__logo-plain">
-                           <img src="assets/img/skill-logos/webdev-colored-github.svg" alt="image" class="skills__logo-color">
-                        </div>
-                     </div>
-                  </div>
-               </article>
-               <article class="skills__card">
-                  <div class="skills__border"></div>
-                  <div class="skills__content">
-                     <h3 class="skills__title">SOFTWARE QUALITY ASSURANCE</h3>
-                     <p class="skills__description"> I possess a solid foundational understanding and experience in applying Software Quality Assurance (SQA) methodologies, practices, and tools.</p>
-                     <div class="skills__logos grid sqa__grid">
-                        <div class="logo__guide">
-                           <img src="assets/img/skill-logos/sqa-grayscale-jira.svg" alt="image" class="skills__logo-plain">
-                           <img src="assets/img/skill-logos/sqa-colored-jira.svg" alt="image" class="skills__logo-color">
-                        </div>
-                        <div class="logo__guide">
-                           <img src="assets/img/skill-logos/sqa-grayscale-selenium.svg" alt="image" class="skills__logo-plain">
-                           <img src="assets/img/skill-logos/sqa-colored-selenium.svg" alt="image" class="skills__logo-color">
-                        </div>
-                     </div>
-                  </div>
-               </article>
+      <!--==================== SKILLS AND TECH ====================-->
+      <section class="skills section" id="skills">
+        <h2 class="section__title section__title-right">
+          <span>Skills.</span>
+        </h2>
+        <span class="title__accent">
+          Skills
+          <img
+            src="assets/img/elements/flower.svg"
+            alt=""
+            class="title__accent-svg"
+          />
+        </span>
+        <div class="skills__container container grid">
+          <article class="skills__card">
+            <div class="skills__border"></div>
+            <div class="skills__content">
+              <h3 class="skills__title">CLOUD ENGINEERING</h3>
+              <p class="skills__description">
+                I design, manage, and optimize cloud solutions, employing the
+                most suitable cloud services and automation tools to engineer
+                scalable, resilient, and cost-effective infrastructures.
+              </p>
+              <div class="skills__logos grid">
+                <div class="logo__guide">
+                  <img
+                    src="assets/img/skill-logos/cloud-grayscale-aws.svg"
+                    alt="image"
+                    class="skills__logo-plain"
+                  />
+                  <img
+                    src="assets/img/skill-logos/cloud-colored-aws.svg"
+                    alt="image"
+                    class="skills__logo-color"
+                  />
+                </div>
+                <div class="logo__guide">
+                  <img
+                    src="assets/img/skill-logos/cloud-grayscale-bash.svg"
+                    alt="image"
+                    class="skills__logo-plain"
+                  />
+                  <img
+                    src="assets/img/skill-logos/cloud-colored-bash.svg"
+                    alt="image"
+                    class="skills__logo-color"
+                  />
+                </div>
+                <div class="logo__guide">
+                  <img
+                    src="assets/img/skill-logos/cloud-grayscale-powershell.svg"
+                    alt="image"
+                    class="skills__logo-plain"
+                  />
+                  <img
+                    src="assets/img/skill-logos/cloud-colored-powershell.svg"
+                    alt="image"
+                    class="skills__logo-color"
+                  />
+                </div>
+                <div class="logo__guide">
+                  <img
+                    src="assets/img/skill-logos/cloud-grayscale-terraform.svg"
+                    alt="image"
+                    class="skills__logo-plain"
+                  />
+                  <img
+                    src="assets/img/skill-logos/cloud-colored-terraform.svg"
+                    alt="image"
+                    class="skills__logo-color"
+                  />
+                </div>
+                <div class="logo__guide">
+                  <img
+                    src="assets/img/skill-logos/cloud-grayscale-docker.svg"
+                    alt="image"
+                    class="skills__logo-plain"
+                  />
+                  <img
+                    src="assets/img/skill-logos/cloud-colored-docker.svg"
+                    alt="image"
+                    class="skills__logo-color"
+                  />
+                </div>
+                <div class="logo__guide">
+                  <img
+                    src="assets/img/skill-logos/cloud-grayscale-kubernetes.svg"
+                    alt="image"
+                    class="skills__logo-plain"
+                  />
+                  <img
+                    src="assets/img/skill-logos/cloud-colored-kubernetes.svg"
+                    alt="image"
+                    class="skills__logo-color"
+                  />
+                </div>
+              </div>
             </div>
-         </section>
-
-         <!--==================== PROJECTS ====================-->
-         <section class="projects section" id="projects">
-            <h2 class="section__title section__title-left"><span>Projects.</span></h2>
-            <span class="title__accent">
-               Projects
-               <img src="assets/img/elements/flower.svg" alt="" class="title__accent-svg">
-            </span>
-            <div class="projects__container container grid">
-               <article class="projects__card">
-                  <div class="projects__preview">
-                     <img src="assets/img/projects/project-1.jpg" alt="MERN App Preview">
-                  </div>
-                  <div class="projects__content">
-                     <h4 class="projects__subtitle">Website</h4>
-                     <h3 class="projects__title">Cloud Deployed Full Stack App</h3>
-                     <p class="projects__description">
-                        In progress
-                     </p>
-                  </div>
-                  <div class="projects__buttons">
-                     <a href="" target="_blank" class="projects__link"><i class="ri-github-fill"></i>Details</a>
-                     <a href="" target="_blank" class="projects__link"><i class="ri-global-line"></i>Visit</a>
-                  </div>
-               </article>
-               <article class="projects__card">
-                  <div class="projects__preview">
-                     <img src="assets/img/projects/project-2.jpg" alt="IaC with Terraform Preview">
-                  </div>
-                  <div class="projects__content">
-                     <h4 class="projects__subtitle">Infrastructure</h4>
-                     <h3 class="projects__title">IaC with Terraform</h3>
-                     <p class="projects__description">
-                        In progress
-                     </p>
-                  </div>
-                  <div class="projects__buttons">
-                     <a href="" target="_blank" class="projects__link"><i class="ri-github-fill"></i>Details</a>
-                     <a href="" target="_blank" class="projects__link"><i class="ri-global-line"></i>Visit</a>
-                  </div>
-               </article>
-               <article class="projects__card">
-                  <div class="projects__preview">
-                     <img src="assets/img/projects/project-3.jpg" alt="CI/CD Pipelines Preview">
-                  </div>
-                  <div class="projects__content">
-                     <h4 class="projects__subtitle">Automation</h4>
-                     <h3 class="projects__title">CI/CD Pipelines</h3>
-                     <p class="projects__description">
-                        In progress
-                     </p>
-                  </div>
-                  <div class="projects__buttons">
-                     <a href="" target="_blank" class="projects__link"><i class="ri-github-fill"></i>Details</a>
-                     <a href="" target="_blank" class="projects__link"><i class="ri-global-line"></i>Visit</a>
-                  </div>
-               </article>
-               <article class="projects__card">
-                  <div class="projects__preview">
-                     <img src="assets/img/projects/project-3.jpg" alt="Containerized Microservices Preview">
-                  </div>
-                  <div class="projects__content">
-                     <h4 class="projects__subtitle">Infrastructure</h4>
-                     <h3 class="projects__title">Containerized Microservices</h3>
-                     <p class="projects__description">
-                        In progress
-                     </p>
-                  </div>
-                  <div class="projects__buttons">
-                     <a href="" target="_blank" class="projects__link"><i class="ri-github-fill"></i>Details</a>
-                     <a href="" target="_blank" class="projects__link"><i class="ri-global-line"></i>Visit</a>
-                  </div>
-               </article>
-               <article class="projects__card">
-                  <div class="projects__preview">
-                     <img src="assets/img/projects/devops-portfolio.png" alt="DevOps Portfolio Preview">
-                  </div>
-                  <div class="projects__content">
-                     <h4 class="projects__subtitle">Website</h4>
-                     <h3 class="projects__title">DevOps Portfolio</h3>
-                     <p class="projects__description">
-                        DevOps portfolio website to showcase my skills and experience in development, automation, and infrastructure management.
-                     </p>
-                  </div>
-                  <div class="projects__buttons">
-                     <a href="https://github.com/jandlcrz/trial-portfolio.git" target="_blank" class="projects__link"><i class="ri-github-fill"></i>Details</a>
-                     <a href="https://jandlcrz.github.io/trial-portfolio/" target="_blank" class="projects__link"><i class="ri-global-line"></i>Visit</a>
-                  </div>
-               </article>
-               <article class="projects__card">
-                  <div class="projects__preview">
-                     <img src="assets/img/projects/amazon-clone.png" alt="Basic Amazon Clone Preview">
-                  </div>
-                  <div class="projects__content">
-                     <h4 class="projects__subtitle">Website</h4>
-                     <h3 class="projects__title">Basic Amazon Clone</h3>
-                     <p class="projects__description">
-                        A basic amazon homepage and checkout clone using HTML, CSS, and Vanilla JS.
-                     </p>
-                  </div>
-                  <div class="projects__buttons">
-                     <a href="https://github.com/jandlcrz/basic-amazon-clone.git" target="_blank" class="projects__link"><i class="ri-github-fill"></i>Details</a>
-                     <a href="https://jandlcrz.github.io/basic-amazon-clone/amazon.html" target="_blank" class="projects__link"><i class="ri-global-line"></i>Visit</a>
-                  </div>
-               </article>
+          </article>
+          <article class="skills__card">
+            <div class="skills__border"></div>
+            <div class="skills__content">
+              <h3 class="skills__title">WEB DEVELOPMENT</h3>
+              <p class="skills__description">
+                I create engaging and effective web applications that
+                harmoniously blend user-focused design with efficient
+                performance and powerful functionality.
+              </p>
+              <div class="skills__logos grid">
+                <div class="logo__guide">
+                  <img
+                    src="assets/img/skill-logos/webdev-grayscale-html.svg"
+                    alt="image"
+                    class="skills__logo-plain"
+                  />
+                  <img
+                    src="assets/img/skill-logos/webdev-colored-html.svg"
+                    alt="image"
+                    class="skills__logo-color"
+                  />
+                </div>
+                <div class="logo__guide">
+                  <img
+                    src="assets/img/skill-logos/webdev-grayscale-css.svg"
+                    alt="image"
+                    class="skills__logo-plain"
+                  />
+                  <img
+                    src="assets/img/skill-logos/webdev-colored-css.svg"
+                    alt="image"
+                    class="skills__logo-color"
+                  />
+                </div>
+                <div class="logo__guide">
+                  <img
+                    src="assets/img/skill-logos/webdev-grayscale-javascript.svg"
+                    alt="image"
+                    class="skills__logo-plain"
+                  />
+                  <img
+                    src="assets/img/skill-logos/webdev-colored-javascript.svg"
+                    alt="image"
+                    class="skills__logo-color"
+                  />
+                </div>
+                <div class="logo__guide">
+                  <img
+                    src="assets/img/skill-logos/webdev-grayscale-typescript.svg"
+                    alt="image"
+                    class="skills__logo-plain"
+                  />
+                  <img
+                    src="assets/img/skill-logos/webdev-colored-typescript.svg"
+                    alt="image"
+                    class="skills__logo-color"
+                  />
+                </div>
+                <div class="logo__guide">
+                  <img
+                    src="assets/img/skill-logos/webdev-grayscale-tailwind.svg"
+                    alt="image"
+                    class="skills__logo-plain"
+                  />
+                  <img
+                    src="assets/img/skill-logos/webdev-colored-tailwind.svg"
+                    alt="image"
+                    class="skills__logo-color"
+                  />
+                </div>
+                <div class="logo__guide">
+                  <img
+                    src="assets/img/skill-logos/webdev-grayscale-sass.svg"
+                    alt="image"
+                    class="skills__logo-plain"
+                  />
+                  <img
+                    src="assets/img/skill-logos/webdev-colored-sass.svg"
+                    alt="image"
+                    class="skills__logo-color"
+                  />
+                </div>
+                <div class="logo__guide">
+                  <img
+                    src="assets/img/skill-logos/webdev-grayscale-react.svg"
+                    alt="image"
+                    class="skills__logo-plain"
+                  />
+                  <img
+                    src="assets/img/skill-logos/webdev-colored-react.svg"
+                    alt="image"
+                    class="skills__logo-color"
+                  />
+                </div>
+                <div class="logo__guide">
+                  <img
+                    src="assets/img/skill-logos/webdev-grayscale-nodejs.svg"
+                    alt="image"
+                    class="skills__logo-plain"
+                  />
+                  <img
+                    src="assets/img/skill-logos/webdev-colored-nodejs.svg"
+                    alt="image"
+                    class="skills__logo-color"
+                  />
+                </div>
+                <div class="logo__guide">
+                  <img
+                    src="assets/img/skill-logos/webdev-grayscale-git.svg"
+                    alt="image"
+                    class="skills__logo-plain"
+                  />
+                  <img
+                    src="assets/img/skill-logos/webdev-colored-git.svg"
+                    alt="image"
+                    class="skills__logo-color"
+                  />
+                </div>
+                <div class="logo__guide">
+                  <img
+                    src="assets/img/skill-logos/webdev-grayscale-github.svg"
+                    alt="image"
+                    class="skills__logo-plain"
+                  />
+                  <img
+                    src="assets/img/skill-logos/webdev-colored-github.svg"
+                    alt="image"
+                    class="skills__logo-color"
+                  />
+                </div>
+              </div>
             </div>
-         </section>
-
-         <!--==================== CONTACT ====================-->
-         <section class="contact section" id="contact">
-            <div class="contact__container grid">
-               <div class="contact__data">
-                  <h2 class="section__title section__title-left"><span>Contact Me.</span></h2>
-                  <p class="contact__description-1">Leave a message and I'll get right back to you.</p>
-                  <div class="geometric-box"></div>
-               </div>
-               <div class="contact__mail">
-                  <h3 class="contact__title">Send Me A Message</h3>
-                  <form action="" class="contact__form" id="contact-form">
-                     <div class="contact__group">
-                        <div class="contact__box">
-                           <input type="text" name="user_name" class="contact__input" id="name" required placeholder="Name">
-                           <label for="name" class="contact__label">Name</label>
-                        </div>
-                        <div class="contact__box">
-                           <input type="email" name="user_email" class="contact__input" id="email" required placeholder="Email Address">
-                           <label for="email" class="contact__label">Email Address</label>
-                        </div>
-                     </div>
-                     <div class="contact__box">
-                        <input type="subject" name="user_subject" class="contact__input" id="subject" required placeholder="Subject">
-                        <label for="subject" class="contact__label">Subject</label>
-                     </div>
-                     <div class="contact__box contact__area">
-                        <textarea name="user_message" id="message" class="contact__input" required placeholder="Message"></textarea>
-                        <label for="message" class="contact__label">Message</label>
-                     </div>
-                     <p class="contact__message" id="contact-message"></p>
-                     <button type="submit" class="contact__button flex__centered"><i class="ri-send-plane-line"></i> Send Message</button>
-                  </form>
-               </div>
-               <div class="contact__social">
-                  <div class="contact__social-data">
-                     <div>
-                        <p class="contact__social-description-1">Not sending emails?</p>
-                        <p class="contact__social-description-2">Feel free to contact me on my socials.</p>
-                     </div>
-                     <div class="contact__social-links flex__centered">
-                        <a href="https://www.linkedin.com/in/janerwindelacruz/" target="_blank" class="contact__social-link"><i class="ri-linkedin-box-line"></i></a>
-                        <a href="https://www.facebook.com/jaaandlcrz/" target="_blank" class="contact__social-link"><i class="ri-facebook-box-line"></i></a>
-                        <a href="https://www.instagram.com/jandlcrz_/" target="_blank" class="contact__social-link"><i class="ri-instagram-line"></i></a>
-                     </div>
-                  </div>
-               </div>
+          </article>
+          <article class="skills__card">
+            <div class="skills__border"></div>
+            <div class="skills__content">
+              <h3 class="skills__title">SOFTWARE QUALITY ASSURANCE</h3>
+              <p class="skills__description">
+                I possess a solid foundational understanding and experience in
+                applying Software Quality Assurance (SQA) methodologies,
+                practices, and tools.
+              </p>
+              <div class="skills__logos grid sqa__grid">
+                <div class="logo__guide">
+                  <img
+                    src="assets/img/skill-logos/sqa-grayscale-jira.svg"
+                    alt="image"
+                    class="skills__logo-plain"
+                  />
+                  <img
+                    src="assets/img/skill-logos/sqa-colored-jira.svg"
+                    alt="image"
+                    class="skills__logo-color"
+                  />
+                </div>
+                <div class="logo__guide">
+                  <img
+                    src="assets/img/skill-logos/sqa-grayscale-selenium.svg"
+                    alt="image"
+                    class="skills__logo-plain"
+                  />
+                  <img
+                    src="assets/img/skill-logos/sqa-colored-selenium.svg"
+                    alt="image"
+                    class="skills__logo-color"
+                  />
+                </div>
+              </div>
             </div>
-         </section>
+          </article>
+        </div>
+      </section>
 
-      </main>
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+        <h2 class="section__title section__title-left">
+          <span>Projects.</span>
+        </h2>
+        <span class="title__accent">
+          Projects
+          <img
+            src="assets/img/elements/flower.svg"
+            alt=""
+            class="title__accent-svg"
+          />
+        </span>
+        <div class="projects__container container grid">
+          <article class="projects__card">
+            <div class="projects__preview">
+              <img
+                src="assets/img/projects/project-1.jpg"
+                alt="MERN App Preview"
+              />
+            </div>
+            <div class="projects__content">
+              <h4 class="projects__subtitle">Website</h4>
+              <h3 class="projects__title">Cloud Deployed Full Stack App</h3>
+              <p class="projects__description">In progress</p>
+            </div>
+            <div class="projects__buttons">
+              <a href="" target="_blank" class="projects__link"
+                ><i class="ri-github-fill"></i>Details</a
+              >
+              <a href="" target="_blank" class="projects__link"
+                ><i class="ri-global-line"></i>Visit</a
+              >
+            </div>
+          </article>
+          <article class="projects__card">
+            <div class="projects__preview">
+              <img
+                src="assets/img/projects/project-2.jpg"
+                alt="IaC with Terraform Preview"
+              />
+            </div>
+            <div class="projects__content">
+              <h4 class="projects__subtitle">Infrastructure</h4>
+              <h3 class="projects__title">IaC with Terraform</h3>
+              <p class="projects__description">In progress</p>
+            </div>
+            <div class="projects__buttons">
+              <a href="" target="_blank" class="projects__link"
+                ><i class="ri-github-fill"></i>Details</a
+              >
+              <a href="" target="_blank" class="projects__link"
+                ><i class="ri-global-line"></i>Visit</a
+              >
+            </div>
+          </article>
+          <article class="projects__card">
+            <div class="projects__preview">
+              <img
+                src="assets/img/projects/project-3.jpg"
+                alt="CI/CD Pipelines Preview"
+              />
+            </div>
+            <div class="projects__content">
+              <h4 class="projects__subtitle">Automation</h4>
+              <h3 class="projects__title">CI/CD Pipelines</h3>
+              <p class="projects__description">In progress</p>
+            </div>
+            <div class="projects__buttons">
+              <a href="" target="_blank" class="projects__link"
+                ><i class="ri-github-fill"></i>Details</a
+              >
+              <a href="" target="_blank" class="projects__link"
+                ><i class="ri-global-line"></i>Visit</a
+              >
+            </div>
+          </article>
+          <article class="projects__card">
+            <div class="projects__preview">
+              <img
+                src="assets/img/projects/project-3.jpg"
+                alt="Containerized Microservices Preview"
+              />
+            </div>
+            <div class="projects__content">
+              <h4 class="projects__subtitle">Infrastructure</h4>
+              <h3 class="projects__title">Containerized Microservices</h3>
+              <p class="projects__description">In progress</p>
+            </div>
+            <div class="projects__buttons">
+              <a href="" target="_blank" class="projects__link"
+                ><i class="ri-github-fill"></i>Details</a
+              >
+              <a href="" target="_blank" class="projects__link"
+                ><i class="ri-global-line"></i>Visit</a
+              >
+            </div>
+          </article>
+          <article class="projects__card">
+            <div class="projects__preview">
+              <img
+                src="assets/img/projects/devops-portfolio.png"
+                alt="DevOps Portfolio Preview"
+              />
+            </div>
+            <div class="projects__content">
+              <h4 class="projects__subtitle">Website</h4>
+              <h3 class="projects__title">DevOps Portfolio</h3>
+              <p class="projects__description">
+                DevOps portfolio website to showcase my skills and experience in
+                development, automation, and infrastructure management.
+              </p>
+            </div>
+            <div class="projects__buttons">
+              <a
+                href="https://github.com/jandlcrz/trial-portfolio.git"
+                target="_blank"
+                class="projects__link"
+                ><i class="ri-github-fill"></i>Details</a
+              >
+              <a
+                href="https://jandlcrz.github.io/trial-portfolio/"
+                target="_blank"
+                class="projects__link"
+                ><i class="ri-global-line"></i>Visit</a
+              >
+            </div>
+          </article>
+          <article class="projects__card">
+            <div class="projects__preview">
+              <img
+                src="assets/img/projects/amazon-clone.png"
+                alt="Basic Amazon Clone Preview"
+              />
+            </div>
+            <div class="projects__content">
+              <h4 class="projects__subtitle">Website</h4>
+              <h3 class="projects__title">Basic Amazon Clone</h3>
+              <p class="projects__description">
+                A basic amazon homepage and checkout clone using HTML, CSS, and
+                Vanilla JS.
+              </p>
+            </div>
+            <div class="projects__buttons">
+              <a
+                href="https://github.com/jandlcrz/basic-amazon-clone.git"
+                target="_blank"
+                class="projects__link"
+                ><i class="ri-github-fill"></i>Details</a
+              >
+              <a
+                href="https://jandlcrz.github.io/basic-amazon-clone/amazon.html"
+                target="_blank"
+                class="projects__link"
+                ><i class="ri-global-line"></i>Visit</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
 
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <div class="contact__container grid">
+          <div class="contact__data">
+            <h2 class="section__title section__title-left">
+              <span>Contact Me.</span>
+            </h2>
+            <p class="contact__description-1">
+              Leave a message and I'll get right back to you.
+            </p>
+            <div class="geometric-box"></div>
+          </div>
+          <div class="contact__mail">
+            <h3 class="contact__title">Send Me A Message</h3>
+            <form action="" class="contact__form" id="contact-form">
+              <div class="contact__group">
+                <div class="contact__box">
+                  <input
+                    type="text"
+                    name="user_name"
+                    class="contact__input"
+                    id="name"
+                    required
+                    placeholder="Name"
+                  />
+                  <label for="name" class="contact__label">Name</label>
+                </div>
+                <div class="contact__box">
+                  <input
+                    type="email"
+                    name="user_email"
+                    class="contact__input"
+                    id="email"
+                    required
+                    placeholder="Email Address"
+                  />
+                  <label for="email" class="contact__label"
+                    >Email Address</label
+                  >
+                </div>
+              </div>
+              <div class="contact__box">
+                <input
+                  type="subject"
+                  name="user_subject"
+                  class="contact__input"
+                  id="subject"
+                  required
+                  placeholder="Subject"
+                />
+                <label for="subject" class="contact__label">Subject</label>
+              </div>
+              <div class="contact__box contact__area">
+                <textarea
+                  name="user_message"
+                  id="message"
+                  class="contact__input"
+                  required
+                  placeholder="Message"
+                ></textarea>
+                <label for="message" class="contact__label">Message</label>
+              </div>
+              <p class="contact__message" id="contact-message"></p>
+              <button type="submit" class="contact__button flex__centered">
+                <i class="ri-send-plane-line"></i> Send Message
+              </button>
+            </form>
+          </div>
+          <div class="contact__social">
+            <div class="contact__social-data">
+              <div>
+                <p class="contact__social-description-1">Not sending emails?</p>
+                <p class="contact__social-description-2">
+                  Feel free to contact me on my socials.
+                </p>
+              </div>
+              <div class="contact__social-links flex__centered">
+                <a
+                  href="https://www.linkedin.com/in/janerwindelacruz/"
+                  target="_blank"
+                  class="contact__social-link"
+                  ><i class="ri-linkedin-box-line"></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/jaaandlcrz/"
+                  target="_blank"
+                  class="contact__social-link"
+                  ><i class="ri-facebook-box-line"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/jandlcrz_/"
+                  target="_blank"
+                  class="contact__social-link"
+                  ><i class="ri-instagram-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-      <!--==================== FOOTER ====================-->
-      <footer class="footer">
-         <div class="footer__container container grid">
-            <ul class="footer__links flex__centered">
-               <li><a href="#home" class="footer__link">Home</a></li>
-               <li><a href="#about" class="footer__link">About</a></li>
-               <li><a href="#skills" class="footer__link">Skills</a></li>
-               <li><a href="#projects" class="footer__link">Projects</a></li>
-            </ul>
-            <span class="footer__copy">&#169; 2023 &mdash; 2024 <a href="">Jan Erwin Dela Cruz.</a></span>
-         </div>
-      </footer>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <ul class="footer__links flex__centered">
+          <li><a href="#home" class="footer__link">Home</a></li>
+          <li><a href="#about" class="footer__link">About</a></li>
+          <li><a href="#skills" class="footer__link">Skills</a></li>
+          <li><a href="#projects" class="footer__link">Projects</a></li>
+        </ul>
+        <span class="footer__copy"
+          >&#169; 2023 &mdash; 2024 <a href="">Jan Erwin Dela Cruz.</a></span
+        >
+      </div>
+    </footer>
 
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up"
+      ><i class="ri-arrow-up-s-line"></i
+    ></a>
 
-      <!--========== SCROLL UP ==========-->
-      <a href="#" class="scrollup" id="scroll-up"><i class="ri-arrow-up-s-line"></i></a>
-
-
-      <script src="assets/js/scrollreveal.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-      <script type="module" src="assets/js/main.js"></script>
-   </body>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
 </html>
